@@ -14,7 +14,7 @@ struct APIResponse {
 
 #[tokio::main]
 async fn main() {
-    let url = format!("https://dadouqz.com/my");
+    let url = format!("https://dadou.io/my");
 
     fn construct_headers() -> HeaderMap {
         let mut headers = HeaderMap::new();
