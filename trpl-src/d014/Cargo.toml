@@ -1,0 +1,28 @@
+[package]
+name = "d014"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A fun game where you guess what number the computer has chosen."
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# ~/.cargo/credentials
+# cargo login abcdefghijklmnopqrstuvwxyz012345
+# cargo yank --vers 1.0.1
+# cargo yank --vers 1.0.1 --undo
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[workspace]
+members = [
+    "adder",
+    "add_one",
+]
+
+[dependencies]
