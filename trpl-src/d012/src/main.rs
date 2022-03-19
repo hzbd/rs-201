@@ -32,6 +32,10 @@ fn main() {
     let config = Config::new(&args).unwrap_or_else(|err| {
         println!("Problem parsing arguments: {}", err);
         println!("参数解析错误了，所以这里将抛错退出");
+
+        // 将错误打印到标准错误
+        eprintln!("Problem parsing arguments: {}", err);
+        
         process::exit(1);
     });
 
